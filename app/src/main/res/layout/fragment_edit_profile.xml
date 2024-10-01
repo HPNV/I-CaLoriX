@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditProfileFragment"
+    android:background="@drawable/half_grad_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10sp"
+            android:text="Profile"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MealImagePreviewContainer"
+            android:layout_width="185sp"
+            android:layout_height="185sp"
+            android:layout_marginLeft="100sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="100sp"
+            app:cardCornerRadius="200sp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/meal_preview"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20sp"
+            android:background="@drawable/rounded_image_bg">
+            <EditText
+                android:id="@+id/unameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/edit_text_style"
+                android:paddingStart="20sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:hint="@string/username"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter" />
+            <EditText
+                android:id="@+id/heightEdit"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/edit_text_style"
+                android:paddingStart="20sp"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/dark_grey"
+                android:hint="height"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter" />
+            <EditText
+                android:id="@+id/weightEdit"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/edit_text_style"
+                android:paddingStart="20sp"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:hint="weight"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter" />
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/edit_text_style"
+                android:paddingStart="20sp"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter"
+                android:popupBackground="@color/white" />
+            <Button
+                android:id="@+id/dobButton"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginBottom="15sp"
+                android:paddingStart="20sp"
+                android:text="@string/date_of_birth"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter"
+                app:backgroundTint= "@null"
+                android:background="@drawable/edit_text_style"/>
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginHorizontal="10sp"
+                android:backgroundTint="@color/dark_green"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="2.5sp"
+    android:paddingBottom="5sp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/MealCard_custom"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="0sp">
+
+        <TextView
+            android:id="@+id/customLogo_cv"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:text="c"
+            android:textAlignment="center"
+            android:layout_marginStart="150sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:background="@drawable/circle_background"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15sp">
+
+            <ImageView
+                android:id="@+id/imagePreview_custom"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/meal_preview"
+                android:padding="5sp"
+                />
+
+            <TextView
+                android:id="@+id/foodName_custom"
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:layout_marginTop="10sp"
+                android:textSize="20sp"
+                android:text="foodName"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/imagePreview_custom" />
+
+            <TextView
+                android:id="@+id/foodCal_custom"
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:text="foodCal"
+                android:textSize="14sp"
+                android:textColor="@color/dark_grey"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@id/foodName_custom" />
+
+            <Button
+                android:id="@+id/button_custom_cv"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginHorizontal="15sp"
+                android:text="Button"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark_green"
+                app:layout_constraintTop_toBottomOf="@id/foodCal_custom" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

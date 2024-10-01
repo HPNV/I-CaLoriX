@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "424500920347",
+    "project_id": "i-calorix",
+    "storage_bucket": "i-calorix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424500920347:android:140f7f1fa50c993a86f8be",
+        "android_client_info": {
+          "package_name": "edu.bluejack23_1.ICaLoriX"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAavZ6rYv_kcqNLE-SQodM8Ex8cacUVUKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
